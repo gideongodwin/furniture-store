@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         "aura": 'Aurallia',
         "swit": "Switzer"
+      },
+      colors: {
+        'grey': '#eaeaea'
       }
     },
   },
