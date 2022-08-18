@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Furniture Store</title>
     <link rel="stylesheet" href="/public/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
 
     <!-- FONTS -->
     <link href="http://fonts.cdnfonts.com/css/aurallia" rel="stylesheet">
-
     <link href="http://fonts.cdnfonts.com/css/switzer" rel="stylesheet">
 
+    <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 
@@ -141,154 +144,159 @@
 
 
 
+    <!-- NEW ARRIVALS SECTION -->
     <div class="w-full flex items-center justify-between px-8">
         <h2 class="text-4xl p-12">New Arrivals</h2>
         <div class="flex items-center gap-4 pr-8">
-            <div class="bg-[#fff] w-12 h-12  flex justify-center items-center rounded-full cursor-pointer">
+            <button aria-label="Previous"
+                class="g-prev bg-[#fff] w-12 h-12  flex justify-center items-center rounded-full cursor-pointer  ">
                 <i class="fa-solid fa-angle-left text-3xl"></i>
-            </div>
-            <div class="bg-[#fff] w-12 h-12  flex justify-center items-center rounded-full cursor-pointer">
-                <i class="fa-solid fa-angle-right text-3xl"></i>
-            </div>
+            </button>
+            <button aria-label="Next"
+                class="g-next bg-[#fff] w-12 h-12  flex justify-center items-center rounded-full cursor-pointer  ">
+                <i class=" fa-solid fa-angle-right text-3xl"></i>
+            </button>
         </div>
 
     </div>
 
-    <div class=" flex flex-wrap justify-center items-center w-full px-16 gap-4 h-screen ">
+    <div class=" flex justify-center items-center w-[90%] m-auto   gap-4">
 
-        <div class="w-72  h-72 relative">
-            <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/mDwU9w2GSoicx5OxihW9"
-                class="w-full h-full object-cover" alt="">
-            <div class="w-full  py-1 absolute bottom-0  bg-white  ">
-                <div class="flex justify-between px-4 items-center">
-                    <div>
-                        <h2>10-Drawer Tall Dresser</h2>
-                        <h2>$2400</h2>
-                    </div>
-                    <div>
-                        <a href="#" class="text-sm">add to cart</a>
-                    </div>
+        <div class="glider-contain">
+            <div class="glider">
+                <div class="w-72  h-72 relative">
+                    <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/mDwU9w2GSoicx5OxihW9"
+                        class="w-full h-full object-cover" alt="">
+                    <div class="w-full  py-1 absolute bottom-0  bg-white  ">
+                        <div class="flex justify-between px-4 items-center">
+                            <div>
+                                <h2>10-Drawer Tall Dresser</h2>
+                                <h2>$2400</h2>
+                            </div>
+                            <div>
+                                <a href="#" class="text-sm">add to cart</a>
+                            </div>
 
-                </div>
-            </div>
-
-        </div>
-
-        <div class="w-72  h-72 relative">
-            <img src="https://cdn.shopify.com/s/files/1/0299/2822/6915/products/cprl-0161912-084p_frt_1_e9e2f53f-f2fa-4627-ba4e-54d8d5ea509b_900x.jpg?v=1652744959"
-                class="w-full h-full object-cover" alt="">
-            <div class="w-full  py-1 absolute bottom-0  bg-white  ">
-                <div class="flex justify-between px-4 items-center">
-                    <div>
-                        <h2>Dining Chair</h2>
-                        <h2>$2400</h2>
-                    </div>
-                    <div>
-                        <a href="#" class="text-sm">add to cart</a>
+                        </div>
                     </div>
 
                 </div>
-            </div>
-        </div>
 
+                <div class="w-72  h-72 relative">
+                    <img src="https://cdn.shopify.com/s/files/1/0299/2822/6915/products/cprl-0161912-084p_frt_1_e9e2f53f-f2fa-4627-ba4e-54d8d5ea509b_900x.jpg?v=1652744959"
+                        class="w-full h-full object-cover" alt="">
+                    <div class="w-full  py-1 absolute bottom-0  bg-white  ">
+                        <div class="flex justify-between px-4 items-center">
+                            <div>
+                                <h2>Dining Chair</h2>
+                                <h2>$2400</h2>
+                            </div>
+                            <div>
+                                <a href="#" class="text-sm">add to cart</a>
+                            </div>
 
-        <div class="w-72  h-72 relative">
-            <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/HczaMxNNQPCpEZDZNjXJ"
-                class="w-full h-full object-cover" alt="">
-            <div class="w-full  py-1 absolute bottom-0  bg-white  ">
-                <div class="flex justify-between px-4 items-center">
-                    <div>
-                        <h2>Woven Cotton Pillows</h2>
-                        <h2>$2400</h2>
+                        </div>
                     </div>
-                    <div>
-                        <a href="#" class="text-sm">add to cart</a>
+                </div>
+                <div class="w-72  h-72 relative">
+                    <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/HczaMxNNQPCpEZDZNjXJ"
+                        class="w-full h-full object-cover" alt="">
+                    <div class="w-full  py-1 absolute bottom-0  bg-white  ">
+                        <div class="flex justify-between px-4 items-center">
+                            <div>
+                                <h2>Woven Cotton Pillows</h2>
+                                <h2>$2400</h2>
+                            </div>
+                            <div>
+                                <a href="#" class="text-sm">add to cart</a>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
-            </div>
+                <div class="w-72  h-72 relative">
+                    <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/F84dBTYGRSiuiS5h3lcT"
+                        class="object-cover w-full h-full" alt="">
+                    <div class="w-full  py-1 absolute bottom-0  bg-white  ">
+                        <div class="flex justify-between px-4 items-center">
+                            <div>
+                                <h2>Signal Side Table</h2>
+                                <h2>$2400</h2>
+                            </div>
+                            <div>
+                                <a href="#" class="text-sm">add to cart</a>
+                            </div>
 
-        </div>
-        <div class="w-72  h-72 relative">
-            <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/F84dBTYGRSiuiS5h3lcT"
-                class="object-cover w-full h-full" alt="">
-            <div class="w-full  py-1 absolute bottom-0  bg-white  ">
-                <div class="flex justify-between px-4 items-center">
-                    <div>
-                        <h2>Signal Side Table</h2>
-                        <h2>$2400</h2>
+                        </div>
                     </div>
-                    <div>
-                        <a href="#" class="text-sm">add to cart</a>
-                    </div>
-
                 </div>
-            </div>
-        </div>
 
-        <div class="w-72  h-72 relative">
-            <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/sYG53zFET0W5qUbOaUDX"
-                class="w-full h-full object-cover" alt="">
-            <div class="w-full  py-1 absolute bottom-0  bg-white  ">
-                <div class="flex justify-between px-4 items-center">
-                    <div>
-                        <h2>Field Armchair</h2>
-                        <h2>$2400</h2>
-                    </div>
-                    <div>
-                        <a href="#" class="text-sm">add to cart</a>
-                    </div>
+                <div class="w-72  h-72 relative">
+                    <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/sYG53zFET0W5qUbOaUDX"
+                        class="w-full h-full object-cover" alt="">
+                    <div class="w-full  py-1 absolute bottom-0  bg-white  ">
+                        <div class="flex justify-between px-4 items-center">
+                            <div>
+                                <h2>Field Armchair</h2>
+                                <h2>$2400</h2>
+                            </div>
+                            <div>
+                                <a href="#" class="text-sm">add to cart</a>
+                            </div>
 
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="w-72  h-72 relative">
-            <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/qs93MXtHRUOaA7QKbSrb"
-                class="w-full h-full object-cover" alt="">
-            <div class="w-full  py-1 absolute bottom-0  bg-white  ">
-                <div class="flex justify-between px-4 items-center">
-                    <div>
-                        <h2>Axel Low Back Chair</h2>
-                        <h2>$2400</h2>
-                    </div>
-                    <div>
-                        <a href="#" class="text-sm">add to cart</a>
-                    </div>
+                <div class="w-72  h-72 relative">
+                    <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/qs93MXtHRUOaA7QKbSrb"
+                        class="w-full h-full object-cover" alt="">
+                    <div class="w-full  py-1 absolute bottom-0  bg-white  ">
+                        <div class="flex justify-between px-4 items-center">
+                            <div>
+                                <h2>Axel Low Back Chair</h2>
+                                <h2>$2400</h2>
+                            </div>
+                            <div>
+                                <a href="#" class="text-sm">add to cart</a>
+                            </div>
 
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="w-72  h-72 relative">
-            <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/txvRg38SAGoHSpFAvyq7"
-                class="w-full h-full object-cover" alt="">
-            <div class="w-full  py-1 absolute bottom-0  bg-white  ">
-                <div class="flex justify-between px-4 items-center">
-                    <div>
-                        <h2>Dean Table Lamp</h2>
-                        <h2>$2400</h2>
-                    </div>
-                    <div>
-                        <a href="#" class="text-sm">add to cart</a>
-                    </div>
+                <div class="w-72  h-72 relative">
+                    <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/txvRg38SAGoHSpFAvyq7"
+                        class="w-full h-full object-cover" alt="">
+                    <div class="w-full  py-1 absolute bottom-0  bg-white  ">
+                        <div class="flex justify-between px-4 items-center">
+                            <div>
+                                <h2>Dean Table Lamp</h2>
+                                <h2>$2400</h2>
+                            </div>
+                            <div>
+                                <a href="#" class="text-sm">add to cart</a>
+                            </div>
 
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="w-72  h-72 relative">
-            <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/ZmNqyrbtRH6GVo6tfM6z"
-                class="w-full h-full object-cover" alt="">
-            <div class="w-full  py-1 absolute bottom-0  bg-white  ">
-                <div class="flex justify-between px-4 items-center">
-                    <div>
-                        <h2>Shag Tufted Rug</h2>
-                        <h2>$2400</h2>
-                    </div>
-                    <div>
-                        <a href="#" class="text-sm">add to cart</a>
-                    </div>
+                <div class="w-72  h-72 relative">
+                    <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/ZmNqyrbtRH6GVo6tfM6z"
+                        class="w-full h-full object-cover" alt="">
+                    <div class="w-full  py-1 absolute bottom-0  bg-white  ">
+                        <div class="flex justify-between px-4 items-center">
+                            <div>
+                                <h2>Shag Tufted Rug</h2>
+                                <h2>$2400</h2>
+                            </div>
+                            <div>
+                                <a href="#" class="text-sm">add to cart</a>
+                            </div>
 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -415,7 +423,62 @@
 
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script>
+        new Glider(document.querySelector('.glider'), {
+            slidesToScroll: 1,
+            slidesToShow: 5,
+            draggable: true,
+            dots: '.dots',
+            arrows: {
+                prev: '.g-prev',
+                next: '.g-next'
+            },
+            responsive: [
+                {
+                    // screens greater than >= 775px
+                    breakpoint: 1200,
+                    settings: {
+                        // Set to `auto` and provide item width to adjust to viewport
+                        slidesToShow: 4,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    // screens greater than >= 1024px
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    // screens greater than >= 1024px
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    // screens greater than >= 1024px
+                    breakpoint: 304,
+                    settings: {
+                        slidesToShow: 1.5,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    // screens greater than >= 1024px
+                    breakpoint: 0,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        })
+            ;
+    </script>
     <script src="/src/furn.js"></script>
 </body>
 
