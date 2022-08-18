@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         "aura": 'Aurallia',
-        "swit": "Switzer"
+        "ops": "Open Sans",
+        "rubik": ['Rubik', 'sans-serif']
       },
       colors: {
         'grey': '#eaeaea'

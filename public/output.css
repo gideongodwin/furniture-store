@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
 .reveal-y{
   position: relative;
   transform: translateY(150px);
@@ -986,12 +988,12 @@ video {
   text-align: start;
 }
 
-.font-swit{
-  font-family: Switzer;
-}
-
 .font-aura{
   font-family: Aurallia;
+}
+
+.font-rubik{
+  font-family: Rubik, sans-serif;
 }
 
 .text-3xl{
@@ -1027,6 +1029,11 @@ video {
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-semibold{
@@ -1075,6 +1082,21 @@ video {
 .text-yellow-900{
   --tw-text-opacity: 1;
   color: rgb(113 63 18 / var(--tw-text-opacity));
+}
+
+.text-\[\#414345\]{
+  --tw-text-opacity: 1;
+  color: rgb(65 67 69 / var(--tw-text-opacity));
+}
+
+.text-\[\#232526\]{
+  --tw-text-opacity: 1;
+  color: rgb(35 37 38 / var(--tw-text-opacity));
+}
+
+.text-gray-900{
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .underline{
