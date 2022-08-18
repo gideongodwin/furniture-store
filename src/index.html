@@ -164,7 +164,7 @@
 
         <div class="glider-contain">
             <div class="glider">
-                <div class="w-72  h-72 relative">
+                <div class="w-72  h-72 relative mr-6">
                     <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/mDwU9w2GSoicx5OxihW9"
                         class="w-full h-full object-cover" alt="">
                     <div class="w-full  py-1 absolute bottom-0  bg-white  ">
@@ -182,7 +182,7 @@
 
                 </div>
 
-                <div class="w-72  h-72 relative">
+                <div class="w-72  h-72 relative mr-6">
                     <img src="https://cdn.shopify.com/s/files/1/0299/2822/6915/products/cprl-0161912-084p_frt_1_e9e2f53f-f2fa-4627-ba4e-54d8d5ea509b_900x.jpg?v=1652744959"
                         class="w-full h-full object-cover" alt="">
                     <div class="w-full  py-1 absolute bottom-0  bg-white  ">
@@ -198,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-72  h-72 relative">
+                <div class="w-72  h-72 relative mr-6">
                     <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/HczaMxNNQPCpEZDZNjXJ"
                         class="w-full h-full object-cover" alt="">
                     <div class="w-full  py-1 absolute bottom-0  bg-white  ">
@@ -215,7 +215,7 @@
                     </div>
 
                 </div>
-                <div class="w-72  h-72 relative">
+                <div class="w-72  h-72 relative mr-6">
                     <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/F84dBTYGRSiuiS5h3lcT"
                         class="object-cover w-full h-full" alt="">
                     <div class="w-full  py-1 absolute bottom-0  bg-white  ">
@@ -232,7 +232,7 @@
                     </div>
                 </div>
 
-                <div class="w-72  h-72 relative">
+                <div class="w-72  h-72 relative mr-6">
                     <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/sYG53zFET0W5qUbOaUDX"
                         class="w-full h-full object-cover" alt="">
                     <div class="w-full  py-1 absolute bottom-0  bg-white  ">
@@ -249,7 +249,7 @@
                     </div>
                 </div>
 
-                <div class="w-72  h-72 relative">
+                <div class="w-72  h-72 relative mr-6">
                     <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/qs93MXtHRUOaA7QKbSrb"
                         class="w-full h-full object-cover" alt="">
                     <div class="w-full  py-1 absolute bottom-0  bg-white  ">
@@ -266,7 +266,7 @@
                     </div>
                 </div>
 
-                <div class="w-72  h-72 relative">
+                <div class="w-72  h-72 relative mr-6">
                     <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/txvRg38SAGoHSpFAvyq7"
                         class="w-full h-full object-cover" alt="">
                     <div class="w-full  py-1 absolute bottom-0  bg-white  ">
@@ -308,7 +308,7 @@
     <!-- 5TH SECTION -->
 
     <div class="my-12 w-full h-[500px] flex items-center justify-center">
-        <div class="w-1/2 h-full">
+        <div class="w-1/2 h-full reveal-x">
             <div class="px-16 mt-20 font-light">
                 <h2 class="text-5xl">Exterior Design</h2>
                 <p class="text-xl mt-4">Enjoy the warm-weather season with our outdoor <br> furniture pieces. Select
@@ -323,17 +323,17 @@
                 </button>
             </div>
         </div>
-        <div class="w-1/2 h-full ">
+        <div class="w-1/2 h-full reveal-y">
             <img src="/images/outdoor.jpg" class="w-full h-full object-cover" alt="">
         </div>
 
     </div>
     <div class="my-14 w-full h-[500px] flex items-center justify-center">
 
-        <div class="w-1/2 h-full ">
+        <div class="w-1/2 h-full reveal-y">
             <img src="/images/dining.jpg" class="w-full h-full object-cover " alt="">
         </div>
-        <div class="w-1/2 h-full ">
+        <div class="w-1/2 h-full reveal-x ">
             <div class="pt-10 px-16 mt-20 font-light">
                 <h2 class="text-5xl">The Dining Collection</h2>
                 <p class="text-xl mt-4">Explore our wide selection of stylish designed dining room <br> furniture</p>
@@ -424,61 +424,7 @@
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-    <script>
-        new Glider(document.querySelector('.glider'), {
-            slidesToScroll: 1,
-            slidesToShow: 5,
-            draggable: true,
-            dots: '.dots',
-            arrows: {
-                prev: '.g-prev',
-                next: '.g-next'
-            },
-            responsive: [
-                {
-                    // screens greater than >= 775px
-                    breakpoint: 1200,
-                    settings: {
-                        // Set to `auto` and provide item width to adjust to viewport
-                        slidesToShow: 4,
-                        slidesToScroll: 2
-                    }
-                }, {
-                    // screens greater than >= 1024px
-                    breakpoint: 900,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    // screens greater than >= 1024px
-                    breakpoint: 640,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    // screens greater than >= 1024px
-                    breakpoint: 304,
-                    settings: {
-                        slidesToShow: 1.5,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    // screens greater than >= 1024px
-                    breakpoint: 0,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                }
-            ]
-        })
-            ;
-    </script>
+
     <script src="/src/furn.js"></script>
 </body>
 
