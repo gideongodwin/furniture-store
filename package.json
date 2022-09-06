@@ -1,14 +1,22 @@
 {
   "name": "furniture-webstite",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.1.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gideongodwin/furniture-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gideongodwin/furniture-store/issues"
+  },
+  "homepage": "https://github.com/gideongodwin/furniture-store#readme",
+  "description": ""
 }
