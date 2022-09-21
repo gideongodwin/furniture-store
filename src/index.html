@@ -18,12 +18,20 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<!-- FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+
+<script src="/src/firebase.js"></script>
+<script src="/src/header.js"></script>
 
 </head>
 
 <body class="bg-grey font-rubik text-gray-900">
     <!-- MAIN NAVBAR -->
-    <div class="bg-white w-full">
+    <div class="bg-white w-full fixed z-50">
         <div class="h-13 py-4 flex items-center justify-around text-yellow-900">
 
             <div>
@@ -60,11 +68,12 @@
                             d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                 </a>
-
+<!-- CART ICON -->
                 <a href="/src/cart.html" class="cart-icon relative ">
                     <div
-                        class="cart-number absolute -top-3 -right-4 w-6 h-6 flex items-center justify-center bg-yellow-900 text-white rounded-full font-bold text-sm ">
+                        class="cart-icon-number absolute -top-3 -right-4 w-6 h-6 flex items-center justify-center bg-yellow-900 text-white rounded-full font-bold text-sm ">
                         5</div>
+                        
 
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor" stroke-width="2">
@@ -166,7 +175,7 @@
         <div class="glider-contain">
             <div class="glider">
                 <div class="w-72  h-72 relative mr-6">
-                    <img src="https://media.graphassets.com/resize=w:1366,fit:crop/output=format:webp/compress/mDwU9w2GSoicx5OxihW9"
+                    <img src="https://media.graphassets.com/resize=w:1366,fit: crop/output=format:webp/compress/mDwU9w2GSoicx5OxihW9"
                         class="w-full h-full object-cover" alt="">
                     <div class="w-full  py-1 absolute bottom-0  bg-white  ">
                         <div class="flex justify-between px-4 items-center">
@@ -174,8 +183,8 @@
                                 <h2>10-Drawer Tall Dresser</h2>
                                 <h2>$2400</h2>
                             </div>
-                            <div>
-                                <a href="#" class="text-sm">add to cart</a>
+                            <div class="text-sm cursor-pointer">
+                                add to cart 
                             </div>
 
                         </div>
@@ -192,8 +201,8 @@
                                 <h2>Dining Chair</h2>
                                 <h2>$2400</h2>
                             </div>
-                            <div>
-                                <a href="#" class="text-sm">add to cart</a>
+                            <div class="text-sm cursor-pointer">
+                                add to cart 
                             </div>
 
                         </div>
@@ -206,10 +215,10 @@
                         <div class="flex justify-between px-4 items-center">
                             <div>
                                 <h2>Woven Cotton Pillows</h2>
-                                <h2>$2400</h2>
+                                <h2>$2000</h2>
                             </div>
-                            <div>
-                                <a href="#" class="text-sm">add to cart</a>
+                            <div class="text-sm cursor-pointer">
+                                add to cart 
                             </div>
 
                         </div>
@@ -223,10 +232,10 @@
                         <div class="flex justify-between px-4 items-center">
                             <div>
                                 <h2>Signal Side Table</h2>
-                                <h2>$2400</h2>
+                                <h2>$1400</h2>
                             </div>
-                            <div>
-                                <a href="#" class="text-sm">add to cart</a>
+                            <div class="text-sm cursor-pointer">
+                                add to cart 
                             </div>
 
                         </div>
@@ -240,10 +249,10 @@
                         <div class="flex justify-between px-4 items-center">
                             <div>
                                 <h2>Field Armchair</h2>
-                                <h2>$2400</h2>
+                                <h2>$2500</h2>
                             </div>
-                            <div>
-                                <a href="#" class="text-sm">add to cart</a>
+                            <div class="text-sm cursor-pointer">
+                                add to cart 
                             </div>
 
                         </div>
@@ -257,10 +266,10 @@
                         <div class="flex justify-between px-4 items-center">
                             <div>
                                 <h2>Axel Low Back Chair</h2>
-                                <h2>$2400</h2>
+                                <h2>$3200</h2>
                             </div>
-                            <div>
-                                <a href="#" class="text-sm">add to cart</a>
+                            <div class="text-sm cursor-pointer">
+                                add to cart 
                             </div>
 
                         </div>
@@ -274,10 +283,10 @@
                         <div class="flex justify-between px-4 items-center">
                             <div>
                                 <h2>Dean Table Lamp</h2>
-                                <h2>$2400</h2>
+                                <h2>$1200</h2>
                             </div>
-                            <div>
-                                <a href="#" class="text-sm">add to cart</a>
+                            <div class="text-sm cursor-pointer">
+                                add to cart 
                             </div>
 
                         </div>
@@ -290,10 +299,10 @@
                         <div class="flex justify-between px-4 items-center">
                             <div>
                                 <h2>Shag Tufted Rug</h2>
-                                <h2>$2400</h2>
+                                <h2>$1950</h2>
                             </div>
-                            <div>
-                                <a href="#" class="text-sm">add to cart</a>
+                            <div class="text-sm cursor-pointer">
+                                add to cart 
                             </div>
 
                         </div>
@@ -426,7 +435,9 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
-    <script src="/src/furn.js"></script>
+<script src="/src/script.js"></script>
+
+
 </body>
 
 </html>
