@@ -24,6 +24,11 @@
   opacity: 1;
 }
 
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
@@ -575,6 +580,22 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.container{
+  width: 100%;
+}
+
+@media (min-width: 992px){
+  .container{
+    max-width: 992px;
+  }
+}
+
+@media (min-width: 1200px){
+  .container{
+    max-width: 1200px;
+  }
 }
 
 .fixed{
