@@ -2,7 +2,7 @@
 
 .reveal-y{
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(100px);
   opacity: 0;
   transition: all 2s ease;
 }
@@ -14,7 +14,7 @@
 
 .reveal-x{
   position: relative;
-  transform: translateX(150px);
+  transform: translateX(100px);
   opacity: 0;
   transition: all 2s ease;
 }
@@ -23,13 +23,6 @@
   transform: translateY(0px);
   opacity: 1;
 }
-
-.swiper {
-  width: 100%;
-  height: 300px;
-}
-
-
 
 @tailwind base;
 @tailwind components;
