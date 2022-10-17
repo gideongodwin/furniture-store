@@ -6,8 +6,7 @@ module.exports = {
       'xs': {'max': '480px'},
       'sm': {'max': '640px'},
       'md': {'max': '992px'},
-      'lg': '992px',
-      'xl': '1200px'
+      'lg': {'max': '1200px'}
     },
     extend: {
       fontFamily: {

@@ -1,12 +1,10 @@
-//   REVEALS
-window.addEventListener('scroll', reveal);
+const reveals = document.querySelectorAll(".reveal");
 
 function reveal() {
-    let reveals = document.querySelectorAll(".reveal-y,.reveal-x");
 
     for (let i = 0; i < reveals.length; i++) {
 
-        let windowheight = window.innerHeight;
+        let windowheight = window.innerHeight
         let revealtop = reveals[i].getBoundingClientRect().top;
         let revealpoint = 150;
 
@@ -18,6 +16,8 @@ function reveal() {
         }
     }
 }
+window.addEventListener('scroll', reveal);
+
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters

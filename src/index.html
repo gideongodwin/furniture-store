@@ -20,35 +20,37 @@
 
 <body class="bg-grey font-rubik text-gray-900">
     <!-- MAIN NAVBAR -->
-    <div class="bg-white w-full fixed z-50">
+
+    <div class="bg-white w-full fixed z-50 px-0 ">
         <div class="h-13 py-4 flex items-center justify-around text-yellow-900">
 
             <div>
-                <a href="/src/index.html" class="font-semibold text-3xl">SOLACE</a>
+                <a href="/src/index.html" class="font-semibold text-3xl" >SOLACE</a>
             </div>
 
             <div class="font-normal text-sm flex items-center gap-4 xs:hidden ">
                 <a href="#">NEW</a>
                 <a href="#">CUSTOM</a>
                 <a href="#">FURNITURE</a>
-                <a href="#">BEDROOM</a>
-                <a href="#">KITCHEN</a>
-                <a href="#">RUGS</a>
-                <a href="#">ACCESSORIES</a>
-                <a href="#">OUTDOOR</a>
+                <a href="#" class="md:hidden">BEDROOM</a>
+                <a href="#" class="md:hidden">KITCHEN</a>
+                <a href="#" class="md:hidden">RUGS</a>
+                <a href="#" class="lg:hidden">ACCESSORIES</a>
+                <a href="#" class="lg:hidden">OUTDOOR</a>
             </div>
 
             <div class="right-links flex items-center gap-4">
+<!-- SEARCH BAR -->
                 <div class="searchbar  border-b border-gray-300 flex items-center xs:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd"
                             d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
                             clip-rule="evenodd" />
                     </svg>
-                    <input type="text" class="outline-none px-2 font-light" placeholder="What are you looking for?"
-                        type="text">
+                    <input type="text" class="outline-none px-2 font-light" placeholder="What are you looking for?">
 
                 </div>
+<!--PROFILE ICON  -->
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor" stroke-width="2">
@@ -65,11 +67,11 @@
                     </svg>
                 </a>
 <!-- HEART ICON -->
-<a href="#"  >
+                <a href="#">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
       </svg>     
-</a>
+                </a>
             </div>
 
 
@@ -79,17 +81,20 @@
 
 
     <!-- HEADER SECTION -->
-    <div class="w-full h-screen  bg-[url('/images/0.jpg')] bg-cover">
-        <h2 class="pt-32 text-5xl text-center font-aura">Luxury at its finest</h2>
+    <div class=" w-full h-screen bg-[url('/images/0.jpg')] bg-cover">
+        
+<div class="pt-72 md:pt-[25rem] xs:pt-40">
+    <h2 class=" text-6xl text-center font-aura text-gray-900 xs:text-5xl">Luxury at its finest</h2>
 
-        <div
-            class="cursor-pointer mt-40 font-semibold flex items-center justify-center border-white border px-4 py-2 w-52 m-auto bg-white hover:bg-black hover:text-white hover:border-none ">
-            <a href="#">Shop new arrivals </a>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-        </div>
+    <div
+        class="cursor-pointer  mt-12 font-semibold flex items-center justify-center border-white border px-4 py-2 w-52 m-auto bg-white hover:bg-black hover:text-white hover:border-none ">
+        <a href="#">Shop new arrivals </a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+    </div>
+</div>
 
     </div>
 
@@ -329,8 +334,8 @@
 
     <!-- 5TH SECTION -->
 
-    <div class="my-12 w-full h-[500px] flex items-center justify-center">
-        <div class="w-1/2 h-full reveal-x">
+    <div class="my-12 w-full h-[500px] flex items-center justify-center reveal">
+        <div class="w-1/2 h-full">
             <div class="px-16 mt-20 font-light">
                 <h2 class="text-5xl">Exterior Design</h2>
                 <p class="text-xl mt-4">Enjoy the warm-weather season with our outdoor <br> furniture pieces. Select
@@ -345,17 +350,18 @@
                 </button>
             </div>
         </div>
-        <div class="w-1/2 h-full reveal-y">
+        <div class="w-1/2 h-full ">
             <img src="/images/outdoor.jpg" class="w-full h-full object-cover" alt="">
         </div>
 
     </div>
-    <div class="my-14 w-full h-[500px] flex items-center justify-center">
 
-        <div class="w-1/2 h-full reveal-y">
+    <div class="my-12 w-full h-[500px] flex items-center justify-center reveal">
+
+        <div class="w-1/2 h-full">
             <img src="/images/dining.jpg" class="w-full h-full object-cover " alt="">
         </div>
-        <div class="w-1/2 h-full reveal-x ">
+        <div class="w-1/2 h-full ">
             <div class="pt-10 px-16 mt-20 font-light">
                 <h2 class="text-5xl">The Dining Collection</h2>
                 <p class="text-xl mt-4">Explore our wide selection of stylish designed dining room <br> furniture</p>
@@ -416,7 +422,7 @@
 
             <div class="flex items-center py-4 px-10">
                 <input type="text" class="w-[18rem] py-3 px-4 outline-none" placeholder="enter your email address">
-                <span class="bg-yellow-900 text-white px-5 py-3 font-medium">SIGN UP<span>
+                <span class="bg-yellow-900 text-white px-5 py-3 font-medium cursor-pointer">SIGN UP<span>
             </div>
 
 
