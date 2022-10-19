@@ -19,8 +19,8 @@
 </head>
 
 <body class="bg-grey font-rubik text-gray-900">
-    <!-- MAIN NAVBAR -->
 
+    <!-- MAIN NAVBAR -->
     <div class="bg-white w-full fixed z-50 px-0 ">
         <div class="h-13 py-4 flex items-center justify-around text-yellow-900">
 
@@ -78,12 +78,10 @@
         </div>
     </div>
 
-
-
     <!-- HEADER SECTION -->
     <div class=" w-full h-screen bg-[url('/images/0.jpg')] bg-cover">
         
-<div class="pt-72 md:pt-[25rem] xs:pt-40">
+<div class="pt-72 md:pt-[25rem">
     <h2 class=" text-6xl text-center font-aura text-gray-900 xs:text-5xl">Luxury at its finest</h2>
 
     <div
@@ -100,12 +98,12 @@
 
     <!-- SECOND SECTION -->
     <div class="w-full my-10">
-        <h2 class="text-center text-5xl font-semibold">Your Home Needs A Makeover</h2>
+        <h2 class="text-center font-aura text-5xl xs:text-3xl xs:font-semibold">Your Home Needs A Makeover</h2>
     </div>
 
     <!-- SECOND SECTION CARDS-->
 
-    <div class="w-full h-auto  flex items-center justify-center gap-4 mb-20">
+    <div class="w-full h-auto  flex items-center justify-center gap-4 mb-12 xs:flex-col xs:flex xs:px-8">
 
         <div class="basis-[30%] w-full h-96  relative overflow-hidden">
             <img src="/images/bedroom.jpg" class="w-full h-full object-cover duration-500 ease-linear hover:scale-125"
@@ -149,9 +147,9 @@
 
 
     <!-- NEW ARRIVALS SECTION -->
-    <div class="w-full flex items-center justify-between px-8">
-        <h2 class="text-4xl p-12">New Arrivals</h2>
-        <div class="flex items-center gap-4 pr-8">
+    <div class="w-full flex items-center justify-between px-16 mb-6 xs:px-8">
+        <h2 class="text-4xl xs:text-3xl">New Arrivals</h2>
+        <div class="flex items-center gap-4 xs:hidden">
             <button aria-label="Previous"
                 class="s-prev bg-[#fff] w-10 h-10  flex justify-center items-center rounded-full cursor-pointer  ">
                 <i class="fa-solid fa-angle-left text-2xl"></i>
@@ -165,12 +163,12 @@
     </div>
 
     <!-- SLIDES -->
-    <div class=" w-[90%] m-auto border border-black">
+    <div class=" w-[90%] m-auto">
 <div class="swiper w-full h-full">
     <div class="swiper-wrapper">
    
         <div class="swiper-slide">
-        <div class="w-72  h-72 relative ">  
+        <div class="w-72  h-72 relative">  
             <img src="https://media.graphassets.com/resize=w:1366,fit: crop/output=format:webp/compress/mDwU9w2GSoicx5OxihW9"
                 class="w-full h-full object-cover" alt="">
             <div class="w-full  py-1 absolute bottom-0  bg-white  ">
@@ -332,10 +330,10 @@
   </div>
     </div>
 
-    <!-- 5TH SECTION -->
+    <!-- EXTERIOR AND DINING SECTION -->
 
-    <div class="my-12 w-full h-[500px] flex items-center justify-center reveal">
-        <div class="w-1/2 h-full">
+    <div class="my-12 w-full h-[500px] flex items-center justify-center reveal xs:hidden">
+        <div class="w-1/2 h-full  ">
             <div class="px-16 mt-20 font-light">
                 <h2 class="text-5xl">Exterior Design</h2>
                 <p class="text-xl mt-4">Enjoy the warm-weather season with our outdoor <br> furniture pieces. Select
@@ -356,7 +354,7 @@
 
     </div>
 
-    <div class="my-12 w-full h-[500px] flex items-center justify-center reveal">
+    <div class="my-12 w-full h-[500px] flex items-center justify-center reveal xs:hidden">
 
         <div class="w-1/2 h-full">
             <img src="/images/dining.jpg" class="w-full h-full object-cover " alt="">
@@ -376,6 +374,17 @@
 
     </div>
 
+    <!-- Mobile Divs -->
+
+    <div class="w-full h-full relative">
+        <img src="https://images.pexels.com/photos/4262173/pexels-photo-4262173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-full h-full object-cover" alt="">
+
+        <div class="absolute bottom-0 right-0 top-[10%]">
+            <a href="#"
+                class=" border-2 border-yellow-900 duration-700 hover:bg-yellow-900 hover:text-white py-3 px-6">Shop
+                Dining</a>
+        </div>
+    </div>
 
     <!-- FOOTER -->
 

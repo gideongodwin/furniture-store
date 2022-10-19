@@ -20,23 +20,21 @@ window.addEventListener('scroll', reveal);
 
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     direction: 'horizontal',
     loop: true,
     
-    // Navigation arrows
     navigation: {
       nextEl: '.s-next',
       prevEl: '.s-prev',
     },
     breakpoints: {
-      500: {
-        slidesPerView: 1
+      300: {
+        slidesPerView: 1.15,
       },
-      700: {
-        slidesPerView: 1.5
+      600: {
+        slidesPerView: 2.5,
       },
-      900:{
+      1200:{
         slidesPerView:4
       }
     }
