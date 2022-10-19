@@ -28,10 +28,10 @@
                 <a href="/src/index.html" class="font-semibold text-3xl" >SOLACE</a>
             </div>
 
-            <div class="font-normal text-sm flex items-center gap-4 xs:hidden ">
-                <a href="#">NEW</a>
-                <a href="#">CUSTOM</a>
-                <a href="#">FURNITURE</a>
+            <div class="font-normal text-sm flex items-center gap-4 xshidden ">
+                <a href="#" class="xs:hidden">NEW</a>
+                <a href="#" class="xs:hidden">CUSTOM</a>
+                <a href="#" class="xs:hidden">FURNITURE</a>
                 <a href="#" class="md:hidden">BEDROOM</a>
                 <a href="#" class="md:hidden">KITCHEN</a>
                 <a href="#" class="md:hidden">RUGS</a>
@@ -332,7 +332,7 @@
 
     <!-- EXTERIOR AND DINING SECTION -->
 
-    <div class="my-12 w-full h-[500px] flex items-center justify-center reveal xs:hidden">
+    <div class="xs:hidden my-12 w-full h-[500px] flex items-center justify-center reveal ">
         <div class="w-1/2 h-full  ">
             <div class="px-16 mt-20 font-light">
                 <h2 class="text-5xl">Exterior Design</h2>
@@ -354,7 +354,7 @@
 
     </div>
 
-    <div class="my-12 w-full h-[500px] flex items-center justify-center reveal xs:hidden">
+    <div class="xs:hidden my-12 w-full h-[500px] flex items-center justify-center reveal ">
 
         <div class="w-1/2 h-full">
             <img src="/images/dining.jpg" class="w-full h-full object-cover " alt="">
@@ -375,23 +375,30 @@
     </div>
 
     <!-- Mobile Divs -->
+    <div class="mxs:hidden w-full h-full relative mt-8">
+        <img src="https://www.rstbrands.com/core/media/media.nl?id=2798987&c=1259219&h=MuBVzmLSB2sslQGGLEaq1mjDcxwB1n4fvVviroSM_DAHvkEg&resizeid=122&resizeh=1024&resizew=1024" class=" w-full h-full object-cover " alt="">
 
-    <div class="w-full h-full relative">
+        <div class="absolute right-2 bottom-8 ">
+            <a href="#"
+                class=" rounded-full text-white bg-yellow-900 hover:bg-white hover:text-yellow-900  py-3 px-6">Shop
+            Outdoor </a>
+        </div>
+    </div>
+
+    <div class=" mxs:hidden w-full h-full relative mt-8 ">
         <img src="https://images.pexels.com/photos/4262173/pexels-photo-4262173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-full h-full object-cover" alt="">
 
-        <div class="absolute bottom-0 right-0 top-[10%]">
+        <div class="absolute right-2 bottom-8">
             <a href="#"
-                class=" border-2 border-yellow-900 duration-700 hover:bg-yellow-900 hover:text-white py-3 px-6">Shop
-                Dining</a>
+                class="rounded-full text-white bg-yellow-900 hover:bg-white hover:text-yellow-900  py-3 px-6">Shop
+                All Dining</a>
         </div>
     </div>
 
     <!-- FOOTER -->
+    <div class="bg-gray-200 w-full h-full flex   justify-center leading-7 mt-auto px-8 pt-10  xs:flex-col  xs:px-0 xs:pt-4">
 
-
-    <div class="bg-gray-200 w-full h-[19rem] flex items-center justify-around leading-7 mt-auto px-8 pt-10 ">
-
-        <div class="flex   px-8 flex-col   text-start w-[20%] w- h-full    ">
+        <div class="flex px-8 flex-col  text-start w-[20%] h-full  xs:w-full xs:mb-4 mxs:w-[33%]">
             <h2 class="font-medium">SOLACE</h2>
             <a href="#">about us</a>
             <a href="#">designers</a>
@@ -402,7 +409,7 @@
             <a href="#">store locations</a>
         </div>
 
-        <div class="flex  px-8 flex-col  text-start w-[20%] w- h-full">
+        <div class="flex  px-8 flex-col  text-start w-[20%]   h-full  xs:w-full  xs:mb-4 mxs:w-[33%] ">
             <h2 class="font-medium">Customer Care</h2>
             <a href="#">help center</a>
             <a href="#">returns</a>
@@ -414,24 +421,22 @@
 
         </div>
 
-        <div class="flex  px-8 flex-col   text-start w-[20%] w- h-full">
+        <div class="flex  px-8 flex-col   text-start w-[20%]   h-full  xs:w-full mxs:w-[33%] ">
             <h2 class="font-medium">Ways To Shop</h2>
             <a href="#">catalog</a>
             <a href="#">refer a friend</a>
             <a href="#">trade program</a>
             <a href="#">current offers</a>
-
         </div>
 
-        <div class="    w-[40%] h-full px-4 ">
-            <p class="text-center text-xl ">Sign up for news on our latest products, <br> exclusive
-                collections
-                and more
+        <!-- SIGN UP -->
+        <div class=" w-[40%] h-full px-4 md:hidden ">
+            <p class="md:text-start text-center md:text-lg text-xl ">Sign up for news on our latest products, exclusive collections and more
             </p>
 
-            <div class="flex items-center py-4 px-10">
-                <input type="text" class="w-[18rem] py-3 px-4 outline-none" placeholder="enter your email address">
-                <span class="bg-yellow-900 text-white px-5 py-3 font-medium cursor-pointer">SIGN UP<span>
+            <div class="flex justify-center mt-4 ">
+                <input type="text" class="w-[15rem] py-3 px-4 outline-none" placeholder="enter your email address">
+                <span class="w-24 tracking-wider flex justify-center items-center bg-yellow-900 text-white  cursor-pointer ">SIGN UP<span>
             </div>
 
 
@@ -441,7 +446,7 @@
     </div>
 
     <!--SECOND FOOTER  -->
-    <div class="social-links bg-gray-200 w-full h-20 flex items-center justify-between px-16">
+    <div class="social-links bg-gray-200 w-full h-full flex items-center justify-between px-16 py-4 xs:flex-col xs:px-0">
 
         <div class="socials flex items-center gap-4">
 
