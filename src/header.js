@@ -9,9 +9,9 @@ function getCartItems (){
 }
 
 function setCartCounter (totalCount){
-        document.querySelector(".cart-icon-number").innerText=totalCount
+        document.querySelector(".cart-icon-number").innerText = totalCount
 }
 
-getCartItems()
+getCartItems();
 
  

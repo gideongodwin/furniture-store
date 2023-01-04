@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Page</title>
     <link rel="stylesheet" href="/public/output.css">
+    <link href="http://fonts.cdnfonts.com/css/aurallia" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
@@ -28,8 +29,9 @@
     <div class="bg-white w-full">
         <div class="h-13 py-4 flex items-center justify-around text-yellow-900">
 
+
             <div>
-                <a href="/src/index.html" class="font-semibold text-3xl">SOLACE</a>
+                <a href="/src/index.html" class="font-semibold text-3xl font-kanit" >ritzee</a>
             </div>
 
             <div class="font-normal text-sm flex items-center gap-4 xs:hidden ">
@@ -81,15 +83,13 @@
     </div>
 
     <div class="w-full my-10 px-16">
-        <h2 class="text-3xl text-center">SHOPPING CART</h2>
+        <h2 class="text-3xl text-center font-aura font-semibold">SHOPPING CART</h2>
     </div>
 
 
-<div class="main-container  w-full h-full flex justify-around md:flex-col border border-red-900">
-
-    <div class="w-[50%] md:w-full h-full border-yellow-500 border">
-
-        <div class="cart-items w-full h-full  flex-col  ">
+<div class="main-container   w-full h-full flex justify-around md:flex-wrap">
+    
+        <div class="w-[50%] md:w-full  cart-items  h-full flex-col  ">
             <!-- <div class="w-full h-48 cart-item flex items-center mb-8  bg-white  ">
 
                 <div class="w-[75%] h-full flex items-center justify-center  ">
@@ -134,66 +134,84 @@
 
 
 
-    </div>
-    <div class="order border-yellow-900 border w-[30%] md:w-full h-full   py-5">
-        <h2 class="text-xl px-4 font-semibold">ORDER SUMMARY</h2>
-        <div class="w-full flex items-center justify-between px-4 pt-4">
+     
+    <div class="order w-[30%]   md:w-full h-full   py-5">
+      <div>
+        <h2 class="text-xl font-semibold pb-2">ORDER SUMMARY</h2>
+        <div class="w-full flex items-center justify-between pr-4 py-4">
             <div class="text-lg">SUBTOTAL</div>
-            <div class="text-lg subtotal-cost-number">&#8358 45,000</div>
+            <div class="text-lg subtotal-cost-number">$ 00,000</div>
         </div>
-        <div class="w-full flex items-center justify-between pr-3 pl-4 pt-2">
+        <div class="w-full flex items-center justify-between pr-3 mt-2 py-4 border border-y-gray-300">
             <div class="font-semibold text-lg">TOTAL</div>
-            <div class="font-semibold total-cost-number text-lg">&#8358 45,000</div>
+            <div class="font-semibold total-cost-number text-lg">$ 00,000</div>
         </div>
+      </div>
+
+
+ 
+    <div class="w-full tracking-wider hover:bg-yellow-800 cursor-pointer h-12 mt-4 px-4  bg-yellow-900 uppercase text-white border-b-4 border-r-4 border-r-white border-b-white">
+
+        <a href="/src/ordercomplete.html" class="flex justify-between items-center w-full h-full">checkout <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+          </a> 
+          
+      </div>
+ 
+
+    
+
     </div>
-  
+
+
+
+
 
 </div>
 
-    <!-- footer -->
-    <div class="bg-gray-200 w-full h-[19rem] flex items-center justify-around leading-7 mt-20 px-8 pt-10 ">
+    <!-- FOOTER -->
+    <div class="bg-gray-200 w-full h-full flex   justify-center leading-7 mt-10 px-8 pt-10  xs:flex-col  xs:px-0 xs:pt-4">
 
-        <div class="flex px-8 flex-col   text-start w-[20%] w- h-full    ">
-            <h2 class="font-medium">SOLACE</h2>
-            <a href="#">about us</a>
-            <a href="#">designers</a>
-            <a href="#">our collections</a>
-            <a href="#">careers</a>
-            <a href="#">investors</a>
-            <a href="#">accessibility</a>
-            <a href="#">store locations</a>
+        <div class="flex px-8 flex-col  text-start w-[20%] h-full  xs:w-full xs:mb-4 mxs:w-[33%]">
+            <h2 class="font-medium font-kanit text-xl">ritzee</h2>
+            <a href="#" class="hover:text-yellow-900">about us</a>
+            <a href="#" class="hover:text-yellow-900">designers</a>
+            <a href="#" class="hover:text-yellow-900">our collections</a>
+            <a href="#" class="hover:text-yellow-900">careers</a>
+            <a href="#" class="hover:text-yellow-900">investors</a>
+            <a href="#" class="hover:text-yellow-900">accessibility</a>
+            <a href="#" class="hover:text-yellow-900">store locations</a>
         </div>
 
-        <div class="flex  px-8 flex-col  text-start w-[20%] w- h-full">
+        <div class="flex  px-8 flex-col  text-start w-[20%]   h-full  xs:w-full  xs:mb-4 mxs:w-[33%] ">
             <h2 class="font-medium">Customer Care</h2>
-            <a href="#">help center</a>
-            <a href="#">returns</a>
-            <a href="#">faq</a>
-            <a href="#">warranty information</a>
-            <a href="#">my account</a>
-            <a href="#">product care & cleaning</a>
-            <a href="#">contact us</a>
+            <a href="#" class="hover:text-yellow-900">help center</a>
+            <a href="#" class="hover:text-yellow-900">returns</a>
+            <a href="#" class="hover:text-yellow-900">faq</a>
+            <a href="#" class="hover:text-yellow-900">warranty information</a>
+            <a href="#" class="hover:text-yellow-900">my account</a>
+            <a href="#" class="hover:text-yellow-900">product care & cleaning</a>
+            <a href="#" class="hover:text-yellow-900">contact us</a>
 
         </div>
 
-        <div class="flex  px-8 flex-col   text-start w-[20%] w- h-full">
+        <div class="flex  px-8 flex-col   text-start w-[20%]   h-full  xs:w-full mxs:w-[33%] ">
             <h2 class="font-medium">Ways To Shop</h2>
-            <a href="#">catalog</a>
-            <a href="#">refer a friend</a>
-            <a href="#">trade program</a>
-            <a href="#">current offers</a>
-
+            <a href="#" class="hover:text-yellow-900">catalog</a>
+            <a href="#" class="hover:text-yellow-900">refer a friend</a>
+            <a href="#" class="hover:text-yellow-900">trade program</a>
+            <a href="#" class="hover:text-yellow-900">current offers</a>
         </div>
 
-        <div class="    w-[40%] h-full px-4 ">
-            <p class="text-center text-xl ">Sign up for news on our latest products, <br> exclusive
-                collections
-                and more
+        <!-- SIGN UP -->
+        <div class=" w-[40%] h-full px-4 md:hidden ">
+            <p class="md:text-start text-center md:text-lg text-xl ">Sign up for news on our latest products, exclusive collections and more
             </p>
 
-            <div class="flex items-center py-4 px-10">
-                <input type="text" class="w-[18rem] py-3 px-4 outline-none" placeholder="enter your email address">
-                <span class="bg-yellow-900 text-white px-5 py-3 font-medium">SIGN UP<span>
+            <div class="flex justify-center mt-4 ">
+                <input type="text" class="w-[15rem] py-3 px-4 outline-none" placeholder="enter your email address">
+                <span class="w-24 tracking-wider flex justify-center items-center bg-yellow-900 text-white  cursor-pointer  hover:bg-gray-600">SIGN UP<span>
             </div>
 
 
@@ -203,25 +221,26 @@
     </div>
 
     <!--SECOND FOOTER  -->
-    <div class="social-links bg-gray-200 w-full h-32 flex items-center justify-between px-16">
+    <div class="social-links bg-gray-200 w-full h-full flex items-center justify-between px-16 py-4 xs:flex-col xs:px-0">
 
         <div class="socials flex items-center gap-4">
 
-            <a href="#"><i class="fa-brands fa-pinterest text-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter text-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram text-lg "></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin text-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest text-lg hover:text-red-500"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter text-lg hover:text-blue-500"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram text-lg hover:text-red-700"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin text-lg hover:text-blue-500"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp text-lg hover:text-green-500"></i></a>
 
         </div>
 
         <div>
-            <span class="text-xs">&copy;2022 Solace, All rights reserved </span>
+            <p class="text-xs">&copy;2022 <span class="font-kanit">ritzee</span>, All rights reserved </p>
         </div>
 
 
 
     </div>
+
 
 </body>
 
