@@ -14,4 +14,3 @@ function setCartCounter (totalCount){
 
 getCartItems();
 
- 
