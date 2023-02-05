@@ -107,11 +107,6 @@ function generateCartItems(cartItems){
 
         </div>
         `
-
-        // let bag = document.querySelector('.bag')
-        // if (item.contains(itemsHTML)){
-        //     bag.style.display = "none"
-        // }
     })
     let ct = document.querySelector('.cart-items')
     ct.innerHTML = itemsHTML
@@ -124,8 +119,8 @@ function generateCartItems(cartItems){
         ct.innerHTML =`  <div class="bag block text-center" >
         <p class="text-base ">Your cart is currently empty</p>
         <button class="mt-8 ">
-        <a href="/src/index.html#shop-items"
-            class="py-3 px-6  border border-yellow-900 duration-700 hover:bg-yellow-900 hover:text-white">Start Shopping</a>
+        
+        
     </button></div>`
     document.querySelector('.order').style.display="none"
     }
